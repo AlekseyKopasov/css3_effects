@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Comparison Slider with jQuery & CSS3</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="twentytwenty.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="jquery.event.move.js"></script>
+  <script src="jquery.twentytwenty.js"></script>
+  <script>
+    $(function() {
+      $(".box[data-orientation != 'vertical']").twentytwenty({default_offset_pct:0.5})
+    })
+  </script>
+</head>
+<body>
+  <div class="box">
+    <img src="image1.jpg" alt="">
+    <img src="image2.jpg" alt="">
+  </div>
+</body>
+</html>
